@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Build a recipe website and movie picker with the Notion API and Next.js
 
-## Getting Started
+> This repo accompanies a free community collection of videos on egghead.
 
-First, run the development server:
+## 🔍 About
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+In this course, we look at building apps with the Notion API and Next.js. We start by learning about generating static pages with pre-rendering in Next.js, and the performance benefits this unlocks.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+We build two examples to cover the concepts in this course. The first is a recipe website backed by a collection of nested Notion pages. This demonstrates how to create an integration and share data with it. Additionally, we cover how to parse the structure of the response data, and transform it into something that makes sense for our React components.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+We learn about the different types of data that exist in Notion's page and block types, and when we need to use each. Lastly, we cover using slugified URLs instead of recipe IDs, making our links much more pleasant and trustworthy.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The second example we build is a movie picker. This fetches data from a Notion Database and helps to suggest a movie we can watch. This module covers requesting data from a Database, iterating over cursor-based pagination to fetch all results from a large dataset, performing mutations on properties in a Database and Next.js' Incremental Static Regeneration.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This course is a great introduction to the Notion API, but also covers the foundational Next.js features that make it so powerful!
 
-## Learn More
+## 🎓 Instructor
 
-To learn more about Next.js, take a look at the following resources:
+[Jon Meyers](https://jonmeyers.io) is a Software Engineer, Educator and Hip Hop Producer from Melbourne, Australia. He's passionate about web development and enabling others to build amazing things!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Jon's courses at egghead.](https://egghead.io/instructors/jon-meyers)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Enjoyed the course? Check out some others at [jonmeyers.io](https://jonmeyers.io/courses), follow on [Twitter](https://twitter.com/_dijonmusters) and subscribe to [YouTube channel](https://www.youtube.com/channel/UCPitAIwktfCfcMR4kDWebDQ).
 
-## Deploy on Vercel
+## 🗺 Table of Contents
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. [Pregenerate Static Pages with Next.js](/01-generate-static-pages)
+2. [Request page data for Next.js from the Notion API](/02-request-page-data)
+3. [Use the Notion API to Request block data in Next.js](/03-request-block-data)
+4. [Use slugified titles for URL in Next.js with the Notion API](/04-slugify-page-data)
+5. [Request Notion database data from the API with Next.js](/05-request-database-data)
+6. [Request paginated data from Notion API with Next.js](/06-paginated-database-data)
+7. [Update database with Next.js using the Notion API](/07-update-database-properties)
+8. [Use Next.js Incremental Static Regeneration to pregenerate Notion API pages on-demand](/08-incremental-static-regeneration)
